@@ -1,4 +1,4 @@
-package com.transamerica.spark.streaming
+package com.practice.spark.streaming
 
 import org.apache.spark.streaming._
 import org.apache.spark.sql.SparkSession
