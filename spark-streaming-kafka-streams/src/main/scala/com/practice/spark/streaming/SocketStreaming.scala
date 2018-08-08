@@ -12,6 +12,7 @@ val sc = spark.sparkContext
 val ssc = new StreamingContext(sc, Seconds(1))
 
 val lines = ssc.socketTextStream("crlnxt049.us.aegon.com", 63333)
+
 //val rdd1 = 
 
 val tableDF = spark.sql("""select sourcesystemname from enterprisedatalakedev.gdqdatastoragetest""") 

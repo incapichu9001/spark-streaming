@@ -15,7 +15,7 @@ object SimpleKafkaProducer extends App{
  
   val producer = new KafkaProducer[String, String](props)
   try{
-    for(i<- 1 to 100) {
+    for(i<- 1 to 100 ) {
       
       val record = new ProducerRecord(TOPIC, s"key-$i", s"hello $i")
       val result: Future[RecordMetadata] = producer.send(record)
